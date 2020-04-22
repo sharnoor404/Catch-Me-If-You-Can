@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
             override fun onFinish() {
                 timeText.text="TIME UP!"
 
+                handler.removeCallbacks(runnable)
+                for(image in imageArray){
+                    image.visibility=View.INVISIBLE
+                }
+
             }
 
             override fun onTick(millisUntilFinished: Long) {
