@@ -107,7 +107,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginBottom="35dp"
             android:gravity="center_vertical"
-            android:text="Time: 10"
+            android:text="Time: 15"
             android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/gridLayout"

@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         imageArray= arrayListOf(imageView2,imageView3,imageView4,imageView5,imageView6,imageView7,imageView8,imageView9,imageView10)
         hideImages()
 
-        object: CountDownTimer(10000,1000){
+        object: CountDownTimer(15000,1000){
             override fun onFinish() {
                 timeText.text="TIME UP!"
 
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                 val index=random.nextInt(8-0)
                 imageArray[index].visibility=View.VISIBLE
 
-                handler.postDelayed(runnable,500)
+                handler.postDelayed(runnable,300)
             }
 
         }
